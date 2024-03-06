@@ -1,0 +1,2 @@
+scipy
+django @ git+https://github.com/django/django/tree/main

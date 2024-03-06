@@ -1,0 +1,39 @@
+Module 1:
+    * requirements.txt
+    * additional dev_reqs.txt
+    * Submodule with it's own requirements.txt
+
+Module 2:
+    * requirements.txt that point to another requirements files
+    * github repo in requirements.txt
+
+Module 3:
+    * dockerfile install ffmpeg
+    * s.Dockerfile install ffmpeg
+    * install.sh install ffmpeg
+    * install script install pip package with specific repo for wheels
+    * install script install another module fro monorepo
+
+Module 4:
+    There is wheel that need to be installed as well, does we look at dependencies for those?
+    There are libraries defined inside setup.py
+
+Module 5:
+    Pipfile
+    Pipfile.lock
+    Django installed from git
+
+Module 6:
+    Main license
+    License per file
+    Same file without license header
+    Parts of file without license header
+
+Module 7:
+    Main license
+    License per file
+    Same file without license header
+    Parts of file without license header
+    e.py non regualar license
+
+Poetry
