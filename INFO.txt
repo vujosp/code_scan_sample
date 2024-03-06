@@ -2,6 +2,8 @@ Module 1:
     * requirements.txt
     * additional dev_reqs.txt
     * Submodule with it's own requirements.txt
+    * Requirement with non commercial license
+    * Package with good license but use another package as dependencie that have non commercial license
 
 Module 2:
     * requirements.txt that point to another requirements files
@@ -22,19 +24,15 @@ Module 5:
     Pipfile
     Pipfile.lock
     Django installed from git
+    License file with name that isn't LICENSE
+    License file is different from parent license
 
 Module 6:
     Main license
     License per file
     Same file without license header
     Parts of file without license header
-
-Module 7:
-    Main license
-    License per file
-    Same file without license header
-    Parts of file without license header
     e.py non regualar license
 
-Module 8:
+Module 7:
     Git Submodule
