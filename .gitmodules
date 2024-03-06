@@ -1,0 +1,3 @@
+[submodule "module_9/code_scan_subrepo"]
+	path = module_9/code_scan_subrepo
+	url = https://github.com/vujosp/code_scan_subrepo
