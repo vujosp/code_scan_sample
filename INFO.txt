@@ -1,38 +1,40 @@
 Module 1:
-    * requirements.txt
-    * additional dev_reqs.txt
-    * Submodule with it's own requirements.txt
-    * Requirement with non commercial license
-    * Package with good license but use another package as dependencie that have non commercial license
+    * requirements.txt, we are expecting to get license and vunarability for every package in requirements.txt
+    * additional dev_reqs.txt, same as above, but file isn't usual name, such as requirements.txt.
+    * Submodule with it's own requirements.txt, we are expecting those to be caught as well
+    * There is python package (plyfile) with GPL license, we are expecting those to be caught and flagged.
+    * There is python package (DVC) with Apache License 2.0 license but use dependent on another python package (Grandalf) that have GPL 2.0 license.
 
 Module 2:
-    * requirements.txt that point to another requirements files
-    * github repo in requirements.txt
+    * requirements.txt that point to another requirements files, this is valid but not so common way to have dependencie in python.
+    * github repo in requirements.txt, there is one requirement that doesn't take package from usual repository, but from github
 
 Module 3:
-    * dockerfile install ffmpeg
-    * s.Dockerfile install ffmpeg
-    * install.sh install ffmpeg
-    * install script install pip package with specific repo for wheels
-    * install script install another module fro monorepo
+    * dockerfile install ffmpeg (GPL), will those be flagged?
+    * s.Dockerfile install ffmpeg (GPL), will those be flagged, since dockerfile doesn't have common name dockerfile, but still have proper extension?
+    * docker_buildfile install ffmpeg (GPL), will those be flagged, dockerfile doesn't have common name dockerfile nor proper extension?
+    * install.sh install ffmpeg (GPL), will those be flagged?
+    * install script install pip package with specific repository, torch in this case.
+    * install script install another module from monorepo, how are those handled?
 
 Module 4:
-    There is wheel that need to be installed as well, does we look at dependencies for those?
-    There are libraries defined inside setup.py
+    There is wheel that need to be installed as well, does it look for license of this wheel and dependencies of wheel itself?
+    There are some additional libraries defined inside setup.py, will those be caught?
 
 Module 5:
-    Pipfile
-    Pipfile.lock
-    Django installed from git
-    License file with name that isn't LICENSE
-    License file is different from parent license
+    There is Pipfile and Pipfile.lock files, this is one way to specify dependencies in python. Are those caught? 
+    There is one package (Django) that is installed from git and not usual python repository.
+    There is one License file (pravila_koriscena) with name that isn't usual, such as LICENSE
+    License file is different from parent license, those will be flagged?
 
 Module 6:
-    Main license
-    License per file
-    Same file without license header
-    Parts of file without license header
-    e.py non regualar license
+    This module have MIT license
+    There is GNU license defined in code/a.py
+    code/b.py is exactly same file but without license header
+    code/c.py only takes some parts of code from code/a.py but don't have license header
+    code/d.py in header it state it's taken from some github repo, with link to file that have proper license. How are those flagged?
+    code/e.py in header it state there is license defined in different folder with link to folder. How are those flagged?
+    code/f.py non classic license info, that prohibit commercial usage
 
 Module 7:
-    Git Submodule
+    There is git submodule that have different license. Will those be caught since github submodules are not downloaded by default.

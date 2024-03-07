@@ -1,4 +1,4 @@
-"""This script is modified from [code_sample](https://github.com/sample/code_scan_script).
+"""This script is modified from [code_sample](https://github.com/vujosp/code_scan_sample/blob/main/module_6/code/a.py).
 
 Original license please see docs/additional_licenses.md.
 """

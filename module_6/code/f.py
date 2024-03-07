@@ -1,6 +1,9 @@
-"""This script is modified from [code_sample](https://github.com/vujosp/code_scan_sample/blob/main/module_6/code/a.py).
-
-For license information, please, check original file.
+"""
+    Software Copyright License for non-commercial scientific research purposes.
+    Please read carefully the following terms and conditions and any accompanying documentation before you download and/or use this script. 
+    By downloading and/or using this script (including downloading, cloning, installing, and any other use of this github repository), you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. 
+    If you do not agree with these terms and conditions, you must not download and/or use the Model & Software. 
+    Any infringement of the terms of this agreement will automatically terminate your rights under this License
 """
 
 import numpy as np
