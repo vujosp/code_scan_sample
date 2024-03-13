@@ -1,4 +1,4 @@
-torch==1.10.2+cu113
+torch==1.10.2
 yolov5==6.1.4
 plyfile==1.0.2
 dvc==3.30.0

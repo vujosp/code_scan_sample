@@ -1,6 +1,7 @@
 set -e
 
-apt-get update install -y ffmpeg
+apt-get update 
+apt-get install ffmpeg -y
 
 pip install torch -f https://download.pytorch.org/whl/torch_stable.html
 
